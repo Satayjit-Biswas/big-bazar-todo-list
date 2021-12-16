@@ -34,10 +34,15 @@ const TodoList = () => {
                             <button
                                 onClick={() => dispatch(deleteTodo(data.id))}
                             >
-                                Remove
+                                Delete
                             </button>
                         </div>
                     ))}
+                </div>
+                <div className="cleardata mt-3">
+                    <button onClick={() => dispatch(removeTodo())}>
+                        Remove All
+                    </button>
                 </div>
             </div>
         </div>
